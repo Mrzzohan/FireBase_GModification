@@ -17,7 +17,7 @@ local fireBase={
 		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
 
 		http.Fetch(self.link..path..self.temp, function(html)
-			if html=='null' then meth('null') else meth(html) end
+			meth(html)
 		end, 
 		function(err)
 			self.print('HTTP: '..err)
