@@ -38,6 +38,7 @@
 	    local fb = include('FireBase.lua')
 	    fb:patch('player/BOT',{gay = true, autist = true, usergroup = "superadmin"}, true)
 	```
+	![](https://i.imgur.com/9lo4Z3Q.png)
 
 * delete:
 
@@ -50,6 +51,7 @@
 	    local fb = include('FireBase.lua')
 	    fb:delete("player/BOT/gay", true)
 	```
+	![](https://i.imgur.com/O0iIzKP.png)
 ### Variable
 * link (string): 
 	example: https://santyvulla.firebaseio.com/
