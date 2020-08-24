@@ -4,7 +4,9 @@
 ### Commands
 * read:
 	#1 path (string)
+	
 	#2 meth (function)/HTML ARGUMENT
+	
 	#3 withpassword (bool)/Need to write with database secret password? If not. you can leave it empty.
 
 	example: 
@@ -22,8 +24,11 @@
 
 * patch:
 	#1 path (string)
+	
 	#2 json (table)
+	
 	#3 withpassword (bool)
+	
 	Comments: If a database is created, it shall update it, if no database is created, it shall create it.
 	
 	example: 
@@ -34,6 +39,7 @@
 
 * delete:
 	#1 path (string)
+	
 	#2 withpassword (bool) 
 
 	example: 
