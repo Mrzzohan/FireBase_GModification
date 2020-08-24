@@ -23,10 +23,10 @@ local fireBase={
 			self.print('HTTP: '..err)
 		end)
 	end,
-	post=function(self,sid,js,withpwd)
-		assert(sid and js, 'Sending request: SteamID or JS[NULL]')
+	post=function(self,path,js,withpwd)
+		assert(path and js, 'Sending request: SteamID or JS[NULL]')
 
-		sid = '/'..sid..'.json'
+		path = '/'..path..'.json'
 		self.temp = nil
 		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
 
@@ -36,7 +36,7 @@ local fireBase={
 			end,
 
 			method = 'PATCH',
-			url = self.link..sid..self.temp,
+			url = self.link..path..self.temp,
 			body = util.TableToJSON(js),
 			type = 'application/json'
 		})
