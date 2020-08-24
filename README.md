@@ -21,7 +21,7 @@
 
 	    //fuck gay detected
 	```
-	![](https://i.imgur.com/REk4Yhf.png)
+	![](https://i.imgur.com/dI36Gvy.png)
 
 * patch:
 
