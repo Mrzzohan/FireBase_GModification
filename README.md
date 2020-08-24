@@ -3,6 +3,7 @@
 
 ### Commands
 * read:
+
 	#1 path (string)
 	
 	#2 meth (function)/HTML ARGUMENT
@@ -23,6 +24,7 @@
 	![](https://i.imgur.com/REk4Yhf.png)
 
 * patch:
+
 	#1 path (string)
 	
 	#2 json (table)
@@ -38,6 +40,7 @@
 	```
 
 * delete:
+
 	#1 path (string)
 	
 	#2 withpassword (bool) 
