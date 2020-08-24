@@ -36,7 +36,7 @@
 	example: 
 	```lua
 	    local fb = include('FireBase.lua')
-	    fb:path('player/BOT',{gay = true, autist = true, usergroup = "superadmin"}, true)
+	    fb:patch('player/BOT',{gay = true, autist = true, usergroup = "superadmin"}, true)
 	```
 
 * delete:
