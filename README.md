@@ -12,14 +12,14 @@
 
 	example: 
 	```lua
-	    local fb = include('FireBase.lua')
-	    fb:read('player/BOT/gay',function(html)
+	local fb = include('FireBase.lua')
+	fb:read('player/BOT/gay',function(html)
 		if tobool(html) then
-		    print('fuck gay detected')
+		    	print('fuck gay detected')
 		end
-	    end)
+	end)
 
-	    //fuck gay detected
+	//fuck gay detected
 	```
 	![](https://i.imgur.com/dI36Gvy.png)
 
@@ -35,8 +35,8 @@
 	
 	example: 
 	```lua
-	    local fb = include('FireBase.lua')
-	    fb:patch('player/BOT',{gay = true, autist = true, usergroup = "superadmin"}, true)
+	local fb = include('FireBase.lua')
+	fb:patch('player/BOT',{gay = true, autist = true, usergroup = "superadmin"}, true)
 	```
 	![](https://i.imgur.com/9lo4Z3Q.png)
 
@@ -48,8 +48,8 @@
 
 	example: 
 	```lua
-	    local fb = include('FireBase.lua')
-	    fb:delete("player/BOT/gay", true)
+	local fb = include('FireBase.lua')
+	fb:delete("player/BOT/gay", true)
 	```
 	![](https://i.imgur.com/O0iIzKP.png)
 ### Variable
