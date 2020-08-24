@@ -48,7 +48,7 @@
 	example: 
 	```lua
 	    local fb = include('FireBase.lua')
-	    fb:delete("player/BOT/gay")
+	    fb:delete("player/BOT/gay", true)
 	```
 ### Variable
 * link (string): 
