@@ -1,4 +1,4 @@
-local fireBase={
+return {
 	link='',
 	pwd='',
 
@@ -59,5 +59,3 @@ local fireBase={
 		})
 	end
 }
-
-return fireBase
