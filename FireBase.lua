@@ -1,6 +1,7 @@
 return {
 	link='',
 	pwd='',
+	temp,
 
 	print=function(str)
 		str=str..'\n'
@@ -13,7 +14,6 @@ return {
 			path = '/'..path..'.json'
 		end
 
-		self.temp = nil
 		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
 
 		http.Fetch(self.link..path..self.temp, function(html)
@@ -27,7 +27,6 @@ return {
 		assert(path and js, 'Sending request: PATH or TABLE[NULL]')
 
 		path = '/'..path..'.json'
-		self.temp = nil
 		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
 
 		HTTP({
