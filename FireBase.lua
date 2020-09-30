@@ -14,7 +14,7 @@ return {
 			path = '/'..path..'.json'
 		end
 
-		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
+		self.temp = (withpwd ~= nil and withpwd or pwd != '') and '?auth='..self.pwd or ''
 
 		http.Fetch(self.link..path..self.temp, function(html)
 			meth(html)
@@ -27,7 +27,7 @@ return {
 		assert(path and js, 'Sending request: PATH or TABLE[NULL]')
 
 		path = '/'..path..'.json'
-		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
+		self.temp = (withpwd ~= nil and withpwd or pwd != '') and '?auth='..self.pwd or ''
 
 		HTTP({
 			failed = function(err)
@@ -45,7 +45,7 @@ return {
 
 		path = '/'..path..'.json'
 		self.temp = nil
-		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
+		self.temp = (withpwd ~= nil and withpwd or pwd != '') and '?auth='..self.pwd or ''
 
 		HTTP({
 			failed = function(err)
