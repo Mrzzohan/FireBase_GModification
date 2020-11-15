@@ -16,7 +16,7 @@ return {
 
 		self.temp = (withpwd ~= nil and withpwd) and '?auth='..self.pwd or ''
 
-		http.Fetch(self.link..path..self.temp, function(html)
+		http.Fetch(self.link..path..self.temp, function(html)--санти пижор
 			meth(html)
 		end, 
 		function(err)
